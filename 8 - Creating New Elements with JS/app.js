@@ -12,12 +12,12 @@ button.addEventListener('click', () => {
 })
 
 showhidebtn.addEventListener('click', () => {
-    let list = document.getElementsByTagName('ul');
+    let list = document.getElementsByTagName('ul')[0];
     if(list.style.display == 'none') {
         list.style.display = 'block';
-
+        showhidebtn.textContent = "hide"
     } else {
-
+        list.style.display = 'none'
         showhidebtn.textContent = 'show';
     }
 })
